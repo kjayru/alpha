@@ -12,6 +12,4 @@
     </author>
 	<preference name="load-url-timeout" value="60000" />
 	<access origin="http://mediacontacts-app.com" />
-    <feature name="http://api.phonegap.com/1.0/device" />
-    <icon src="icon.png" /> 
     </widget>
