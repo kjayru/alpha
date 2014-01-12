@@ -15,66 +15,20 @@
 <div data-role="page" id="home">
 	<div data-role="header">
 		<h1>RETO ALPHA</h1>
-        <div data-role="navbar">
-		<ul>
-			<li><a href="#scool" class="mscool">One</a></li>
-			<li><a href="#teens" class="mteen">Two</a></li>
-		
-		</ul>
-	</div>
 	</div>
 	<div role="main" class="ui-content">
-		<form id="categoria">	  
-            <div data-role="fieldcontain">
-	     	    <label for="date">Date Input:</label>
-	     	    <input type="date" name="datem" id="date" value=""  />
-			</div>	
-            <input type="button" id="sendata1" value="Enviar">
-           </form>
-	</div>
-     	<div data-role="footer">
-		<h4>Alpha</h4>
-	</div>
-</div>
-<div data-role="page" id="scool">
-	<div data-role="header">
-		<h1>RETO ALPHA SCOOL</h1>     
-	</div>
-	<div role="main" class="ui-content">
-		<ul data-role="listview" data-inset="true" id="listascool">
-            
-           
-        </ul>
-	</div>
-   	<div data-role="footer">
-	 <h4>Alpha</h4>
-	</div>
-</div>  
-<div data-role="page" id="teens">
-	<div data-role="header">
-		<h1>RETO ALPHA TEENS</h1>
-	</div>
-
-	<div role="main" class="ui-content">
-		<ul data-role="listview" data-inset="true" id="listateens">
-            
-        </ul>
+		 QUIZ TEENS
 	</div>
 	<div data-role="footer">
 		<h4>Alpha</h4>
 	</div>
-</div> 
+</div>
         <script src="js/jquery.js"></script>
         <script src="js/jquery.mobile-1.4.0.min.js"></script>
           <script>
 		  var service_url = "http://mediacontacts-app.com/__beta/webservice/";
 			$(document).ready(function(){
-				<!-- ingresa al test --->
-				$(".cs").on('click',function(){
-					   var seleccion=$(this).attr("rel");
-					   console.log("dato: "+seleccion);
-					});
-				<!--- define categorias ---->
+	
 				$('#sendata1').on('click',function(){
 					var datos = $("#categoria").serialize();
 					var html='';
@@ -87,17 +41,15 @@
 							 if(data.level=="scool"){
 								 $.getJSON(service_url+"json.catscool.php",function(response){
 									    $.each(response, function(i,e) {
-											var a = i+1;
-											  $("#listascool").append("<li><a href='quizcool.html?id="+a+"' class='ui-btn ui-btn-icon-right ui-icon-carat-r cs' rel='"+i+"'>"+response[i].nombre+"</a></li>");
+											  $("#listascool").append("<li><a href='#' class='ui-btn ui-btn-icon-right ui-icon-carat-r cs' rel='"+i+"'>"+response[i].nombre+"</a></li>");
 											});
 									 });
 								 $(".mscool").trigger("click");
 								 }
 							 if(data.level=="teens"){
-								 var b = i+1;
 								  $.getJSON(service_url+"json.catteen.php",function(response){
 									    $.each(response, function(i,e) {
-											  $("#listateens").append("<li><a href='quizteen.html?id="+b+"' class='ui-btn ui-btn-icon-right ui-icon-carat-r ct'  rel='"+i+"'>"+response[i].nombre+"</a></li>");
+											  $("#listateens").append("<li><a href='#' class='ui-btn ui-btn-icon-right ui-icon-carat-r ct'  rel='"+i+"'>"+response[i].nombre+"</a></li>");
 											});
 									 });
 								 $(".mteen").trigger("click");
