@@ -1,4 +1,0 @@
-alpha
-=====
-
-desarrollo app alph

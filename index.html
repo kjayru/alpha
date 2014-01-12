@@ -1,133 +1,301 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="format-detection" content="telephone=no" />
-        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
-        <link rel="stylesheet" type="text/css" href="css/index.css" />
-        <link rel="stylesheet" href="js/jquery.mobile-1.4.0.css"/>
-	    <link rel="shortcut icon" href="favicon.ico">
-        <title>Retos alpha</title>		
-    </head>
-<body>    
-<div data-role="page" id="home">
-	<div data-role="header">
-		<h1>RETO ALPHA</h1>
-        <div data-role="navbar">
-		<ul>
-			<li><a href="#scool" class="mscool">One</a></li>
-			<li><a href="#teens" class="mteen">Two</a></li>
-		
-		</ul>
-	</div>
-	</div>
-	<div role="main" class="ui-content">
-		<form id="categoria">	  
-            <div data-role="fieldcontain">
-	     	    <label for="date">Date Input:</label>
-	     	    <input type="date" name="datem" id="date" value=""  />
-			</div>	
-            <input type="button" id="sendata1" value="Enviar">
-           </form>
-	</div>
-     	<div data-role="footer">
-		<h4>Alpha</h4>
-	</div>
-</div>
-<div data-role="page" id="scool">
-	<div data-role="header">
-		<h1>RETO ALPHA SCOOL</h1>     
-	</div>
-	<div role="main" class="ui-content">
-		<ul data-role="listview" data-inset="true" id="listascool">
-            
-           
-        </ul>
-	</div>
-   	<div data-role="footer">
-	 <h4>Alpha</h4>
-	</div>
-</div>  
-<div data-role="page" id="teens">
-	<div data-role="header">
-		<h1>RETO ALPHA TEENS</h1>
-	</div>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>List App</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
 
-	<div role="main" class="ui-content">
-		<ul data-role="listview" data-inset="true" id="listateens">
-            
+<link rel="stylesheet" href="css/jquerymobile.css" />
+<link rel="stylesheet" href="css/style.css"></head>
+<body>
+
+<!-- ================= Home ================= -->
+<div id="home" data-role="page">
+  <article data-role="content">
+    <h1>Portfolio</h1>  
+    <p>The Roux Academy application shows you a list of our artists as well as some of their artwork.</p>
+    	<div data-role="controlgroup">
+        <a href="#artists" class="ui-btn ui-btn-icon-left ui-icon-user">Artists</a>
+    	</div>
+  </article>
+</div>
+
+<!-- ================= Artists ================= -->
+<section data-role="page" id="artists">
+	<header data-role="header" data-position="fixed">
+      <a href="#home" data-icon="home" data-iconpos="notext">Home</a>
+		<h5>Artists</h5>
+	</header>
+
+	<article data-role="content">
+
+    <form class="ui-filterable">
+        <input id="artistList" data-type="search">
+    </form>
+
+		<ul data-role="listview"  data-filter="true" data-input="#artistList">
+<li><a href="#artwork_Barot_Bellingham" data-transition="slide" data-transition="slide">
+    <img src="images/artists/Barot_Bellingham_tn.jpg" alt="Sample artwork for Barot_Bellingham">
+    <h1>Barot Bellingham</h1>
+    <p>Barot can trace his decision to become an artist to the ripe old age of two, when his mother put his first crayon painting on the refrigerator. From that point on, he was obsessed with art, and began creating mature works of art as early as five years old. A child prodigy, Barot sold his first professional painting at the age of nine for $2000, and was guest lecturing on art by the time he was eleven.</p>
+  </a></li>
+<li><a href="#artwork_Constance_Smith" data-transition="slide">
+    <img src="images/artists/Constance_Smith_tn.jpg" alt="Sample artwork for Constance_Smith">
+    <h1>Constance Olivia Smith</h1>
+    <p>Constance received the Fullerton-Brighton-Norwell Award for Modern Art for her mixed-media image of a tree of life, with jewel-adorned branches depicting the arms of humanity, and precious gemstone-decorated leaves representing the spouting buds of togetherness. The daughter of a New York jeweler, Constance has been salvaging the discarded remnants of her father's jewelry-making since she was five years old, and won the New York State Fair grand prize at the age of 8 years old for a gem-adorned painting of the Manhattan Bridge.</p>
+  </a></li>
+<li><a href="#artwork_Gerard_Donahue" data-transition="slide">
+    <img src="images/artists/Gerard_Donahue_tn.jpg" alt="Sample artwork for Gerard_Donahue">
+    <h1>Gerard Kent Donahue</h1>
+    <p>Art is in Gerard's genes. His father, Maston Gerard Donahue was a sculptor who helped create some of the most notable statues of our time, including the "Windmill of Time" in Washington, D.C. His mother Lillian Paxton Donahue, is a landscape painter who supported the family full-time by the sale of her paintings, after the untimely death of Gerard's father when Gerard was just 13. Gerard learned the early lessons in sculpting from his father, and continues to study sculpture as his life's passion, partially to complete the legacy of his father, and partially to forge this own destiny as an accomplished sculptor. He is currently the Renton Scholar at Deschton University in Vienna Austria, and is completing his artist in residence commitment for the next year.</p>
+  </a></li>
+<li><a href="#artwork_Hassum_Harrod" data-transition="slide">
+    <img src="images/artists/Hassum_Harrod_tn.jpg" alt="Sample artwork for Hassum_Harrod">
+    <h1>Hassum Harrod</h1>
+    <p>The Art College in New Dehli sponsored Hassum on scholarship for his entire undergraduate career at the university, seeing great promise in his contemporary paintings of landscapes - that use equal parts muted and vibrant tones, and are almost a contradiction in art. Expected to follow in his grandfather's and father's footsteps and become an engineer, Hassum followed his heart and never looked back. Currently, Hassum is studying for his MFA at San Francisco Art Academy, where he has become known for his impressive color theories and one-of-a-kind color palettes – and has amassed an extensive underground following.</p>
+  </a></li>
+<li><a href="#artwork_Hillary_Goldwynn" data-transition="slide">
+    <img src="images/artists/Hillary_Goldwynn_tn.jpg" alt="Sample artwork for Hillary_Goldwynn">
+    <h1>Hillary Goldwynn-Post</h1>
+    <p>Hillary is a sophomore art sculpture student at New York University, and has already won all the major international prizes for new painters, including the Divinity Circle, the International Painter's Medal, and the Academy of Paris Award. Hillary's CAC exhibit features paintings that contain only water images including waves, deep sea, and river.</p>
+  </a></li>
+<li><a href="#artwork_Jennifer_Jerome" data-transition="slide">
+    <img src="images/artists/Jennifer_Jerome_tn.jpg" alt="Sample artwork for Jennifer_Jerome">
+    <h1>Jennifer Jerome</h1>
+    <p>Jennifer studied psychology as an undergraduate at UCLA, but quickly discovered her heart was in painting and drawing. Always the idealist, she decided to find a way to do both, and pursued a Master's in Art Therapy. Jennifer now works as a counselor for the developmentally disabled, using art therapy to rehabilitate young adults. She feels it fulfills her purpose on the planet. Apart from career in art therapy, Jennifer paints and draws every evening and weekend, and has amassed a large body of critically acclaimed work in a very short time.</p>
+  </a></li>
+<li><a href="#artwork_Jonathan_Ferrar" data-transition="slide">
+    <img src="images/artists/Jonathan_Ferrar_tn.jpg" alt="Sample artwork for Jonathan_Ferrar">
+    <h1>Jonathan G. Ferrar II</h1>
+    <p>Labeled as "The Artist to Watch in 2012" by the London Review, Johnathan has already sold one of the highest priced-commissions paid to an art student, ever on record. The piece, entitled Gratitude Resort, a work in oil and mixed media, was sold for $750,000 and Jonathan donated all the proceeds to Art for Peace, an organization that provides college art scholarships for creative children in developing nations.</p>
+  </a></li>
+		</ul>
+	</article>
+    <footer data-role="footer" data-position="fixed">
+      <nav data-role="navbar">
+        <ul>
+          <li><a href="#home" data-icon="home">Home</a></li>
+          <li><a href="#artists" data-icon="info">artists</a></li>
         </ul>
-	</div>
-	<div data-role="footer">
-		<h4>Alpha</h4>
-	</div>
-</div> 
-        <script src="js/jquery.js"></script>
-        <script src="js/jquery.mobile-1.4.0.min.js"></script>
-          <script>
-		  var service_url = "http://mediacontacts-app.com/__beta/webservice/";
-			$(document).ready(function(){
-				<!-- ingresa al test --->
-				$(".cs").on('click',function(){
-					   var seleccion=$(this).attr("rel");
-					   console.log("dato: "+seleccion);
-					});
-				<!--- define categorias ---->
-				$('#sendata1').on('click',function(){
-					var datos = $("#categoria").serialize();
-					var html='';
-					$.ajax({
-						url:service_url+"json.leves.php",
-						type:"POST",
-						dataType:"json",
-						data:datos,
-						success: function(data){
-							 if(data.level=="scool"){
-								 $.getJSON(service_url+"json.catscool.php",function(response){
-									    $.each(response, function(i,e) {
-											var a = i+1;
-											  $("#listascool").append("<li><a href='quizcool.html?id="+a+"' class='ui-btn ui-btn-icon-right ui-icon-carat-r cs' rel='"+i+"'>"+response[i].nombre+"</a></li>");
-											});
-									 });
-								 $(".mscool").trigger("click");
-								 }
-							 if(data.level=="teens"){
-								 var b = i+1;
-								  $.getJSON(service_url+"json.catteen.php",function(response){
-									    $.each(response, function(i,e) {
-											  $("#listateens").append("<li><a href='quizteen.html?id="+b+"' class='ui-btn ui-btn-icon-right ui-icon-carat-r ct'  rel='"+i+"'>"+response[i].nombre+"</a></li>");
-											});
-									 });
-								 $(".mteen").trigger("click");
-								 }
-							}
-						});
-					});
-					
-					
-					
-				});
-				
-				function getUrlVars() {
-					var vars = [], hash;
-					var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
-					for(var i = 0; i < hashes.length; i++)
-					{
-						hash = hashes[i].split('=');
-						vars.push(hash[0]);
-						vars[hash[0]] = hash[1];
-					}
-					return vars;
-				}
-		</script> 
-       <!-- <script src="http://demos.jquerymobile.com/1.0a4.1/experiments/ui-datepicker/jQuery.ui.datepicker.js"></script>
-		<script src="http://demos.jquerymobile.com/1.0a4.1/experiments/ui-datepicker/jquery.ui.datepicker.mobile.js"></script>   
-     <script type="text/javascript" src="phonegap.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
-        <script type="text/javascript">
-            app.initialize();
-        </script>-->
-      
-    </body>
+      </nav>
+    </footer>
+</section><!-- Page Photos -->
+
+<!-- ================= Photo Pages ================= -->
+
+	<section class="artistinfo" data-role="page" id="artwork_Barot_Bellingham">
+		<header data-role="header" data-position="fixed">
+			<h1>Barot Bellingham</h1>
+      <a href="#artists" data-icon="back" data-iconpos="notext" data-transition="slide" data-direction="reverse">Artists</a>
+		</header>
+    <article data-role="content">
+      <h2>About Barot Bellingham</h2>
+      <p><img src="images/artists/Barot_Bellingham_tn.jpg" alt="Barot Bellingham">Barot can trace his decision to become an artist to the ripe old age of two, when his mother put his first crayon painting on the refrigerator. From that point on, he was obsessed with art, and began creating mature works of art as early as five years old. A child prodigy, Barot sold his first professional painting at the age of nine for $2000, and was guest lecturing on art by the time he was eleven.</p>
+
+      <h3>Artwork</h3>
+      <section class="ui-grid-d">
+        <div class="ui-block-a"><img src="images/artwork/Barot_Bellingham_01_tn.jpg" alt="Barot Bellingham 01"></div>
+        <div class="ui-block-b"><img src="images/artwork/Barot_Bellingham_02_tn.jpg" alt="Barot Bellingham 02"></div>
+        <div class="ui-block-c"><img src="images/artwork/Barot_Bellingham_03_tn.jpg" alt="Barot Bellingham 03"></div>
+        <div class="ui-block-d"><img src="images/artwork/Barot_Bellingham_04_tn.jpg" alt="Barot Bellingham 04"></div>
+        <div class="ui-block-e"><img src="images/artwork/Barot_Bellingham_05_tn.jpg" alt="Barot Bellingham 05"></div>
+        <div class="ui-block-a"><img src="images/artwork/Barot_Bellingham_06_tn.jpg" alt="Barot Bellingham 06"></div>
+        <div class="ui-block-b"><img src="images/artwork/Barot_Bellingham_07_tn.jpg" alt="Barot Bellingham 07"></div>
+      </section>
+    </article>
+    <footer data-role="footer" data-position="fixed">
+      <nav data-role="navbar">
+        <ul>
+          <li><a href="#home" data-icon="home">Home</a></li>
+          <li><a href="#artists" data-icon="info">artists</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </section>
+
+<!-- ================= Page ================= -->
+
+  <section class="artistinfo" data-role="page" id="artwork_Constance_Smith">
+    <header data-role="header" data-position="fixed">
+      <h1>Constance Olivia Smith</h1>
+      <a href="#artists" data-icon="back" data-iconpos="notext" data-transition="slide" data-direction="reverse">Artists</a>
+    </header>
+    <article data-role="content">
+      <h2>About Constance Olivia Smith</h2>
+      <p><img src="images/artists/Constance_Smith_tn.jpg" alt="Barot Bellingham">Constance received the Fullerton-Brighton-Norwell Award for Modern Art for her mixed-media image of a tree of life, with jewel-adorned branches depicting the arms of humanity, and precious gemstone-decorated leaves representing the spouting buds of togetherness. The daughter of a New York jeweler, Constance has been salvaging the discarded remnants of her father's jewelry-making since she was five years old, and won the New York State Fair grand prize at the age of 8 years old for a gem-adorned painting of the Manhattan Bridge.</p>
+      <section class="ui-grid-d">
+        <div class="ui-block-a"><img src="images/artwork/Constance_Smith_01_tn.jpg" alt="Constance Smith 01"></div>
+        <div class="ui-block-b"><img src="images/artwork/Constance_Smith_02_tn.jpg" alt="Constance Smith 02"></div>
+        <div class="ui-block-c"><img src="images/artwork/Constance_Smith_03_tn.jpg" alt="Constance Smith 03"></div>
+        <div class="ui-block-d"><img src="images/artwork/Constance_Smith_04_tn.jpg" alt="Constance Smith 04"></div>
+        <div class="ui-block-e"><img src="images/artwork/Constance_Smith_05_tn.jpg" alt="Constance Smith 05"></div>
+      </section>
+    </article>
+    <footer data-role="footer" data-position="fixed">
+      <nav data-role="navbar">
+        <ul>
+          <li><a href="#home" data-icon="home">Home</a></li>
+          <li><a href="#artists" data-icon="info">artists</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </section>
+
+<!-- ================= Page ================= -->
+
+  <section class="artistinfo"  data-role="page" id="artwork_Gerard_Donahue">
+    <header data-role="header" data-position="fixed">
+      <h1>Gerard Kent Donahue</h1>
+      <a href="#artists" data-icon="back" data-iconpos="notext" data-transition="slide" data-direction="reverse">Artists</a>
+    </header>
+    <article data-role="content">
+      <h1>About Gerard Kent Donahue</h1>
+      <p><img src="images/artists/Gerard_Donahue_tn.jpg" alt="Sample artwork for Gerard_Donahue">Art is in Gerard's genes. His father, Maston Gerard Donahue was a sculptor who helped create some of the most notable statues of our time, including the "Windmill of Time" in Washington, D.C. His mother Lillian Paxton Donahue, is a landscape painter who supported the family full-time by the sale of her paintings, after the untimely death of Gerard's father when Gerard was just 13. Gerard learned the early lessons in sculpting from his father, and continues to study sculpture as his life's passion, partially to complete the legacy of his father, and partially to forge this own destiny as an accomplished sculptor. He is currently the Renton Scholar at Deschton University in Vienna Austria, and is completing his artist in residence commitment for the next year.</p>
+      <section class="ui-grid-d">
+        <div class="ui-block-a"><img src="images/artwork/Gerard_Donahue_01_tn.jpg" alt="Gerard Donahue 01"></div>
+        <div class="ui-block-b"><img src="images/artwork/Gerard_Donahue_02_tn.jpg" alt="Gerard Donahue 02"></div>
+        <div class="ui-block-c"><img src="images/artwork/Gerard_Donahue_03_tn.jpg" alt="Gerard Donahue 03"></div>
+        <div class="ui-block-d"><img src="images/artwork/Gerard_Donahue_04_tn.jpg" alt="Gerard Donahue 04"></div>
+      </section>
+    </article>
+    <footer data-role="footer" data-position="fixed">
+      <nav data-role="navbar">
+        <ul>
+          <li><a href="#home" data-icon="home">Home</a></li>
+          <li><a href="#artists" data-icon="info">artists</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </section>
+
+<!-- ================= Page ================= -->
+
+  <section class="artistinfo"  data-role="page" id="artwork_Hassum_Harrod">
+    <header data-role="header" data-position="fixed">
+      <h1>Hassum Harrod</h1>
+      <a href="#artists" data-icon="back" data-iconpos="notext" data-transition="slide" data-direction="reverse">Artists</a>
+    </header>
+    <article data-role="content">
+      <h1>About Hassum Harrod</h1>
+      <p><img src="images/artists/Hassum_Harrod_tn.jpg" alt="Sample artwork for Hassum_Harrod">The Art College in New Dehli sponsored Hassum on scholarship for his entire undergraduate career at the university, seeing great promise in his contemporary paintings of landscapes - that use equal parts muted and vibrant tones, and are almost a contradiction in art. Expected to follow in his grandfather's and father's footsteps and become an engineer, Hassum followed his heart and never looked back. Currently, Hassum is studying for his MFA at San Francisco Art Academy, where he has become known for his impressive color theories and one-of-a-kind color palettes – and has amassed an extensive underground following.</p>
+      <section class="ui-grid-d">
+        <div class="ui-block-a"><img src="images/artwork/Hassum_Harrod_01_tn.jpg" alt="Hassum Harrod 01"></div>
+        <div class="ui-block-b"><img src="images/artwork/Hassum_Harrod_02_tn.jpg" alt="Hassum Harrod 02"></div>
+        <div class="ui-block-c"><img src="images/artwork/Hassum_Harrod_03_tn.jpg" alt="Hassum Harrod 03"></div>
+        <div class="ui-block-d"><img src="images/artwork/Hassum_Harrod_04_tn.jpg" alt="Hassum Harrod 04"></div>
+        <div class="ui-block-e"><img src="images/artwork/Hassum_Harrod_05_tn.jpg" alt="Hassum_Harrod_05"></div>
+        <div class="ui-block-a"><img src="images/artwork/Hassum_Harrod_06_tn.jpg" alt="Hassum_Harrod_06"></div>
+      </section>
+    </article>
+    <footer data-role="footer" data-position="fixed">
+      <nav data-role="navbar">
+        <ul>
+          <li><a href="#home" data-icon="home">Home</a></li>
+          <li><a href="#artists" data-icon="info">artists</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </section>
+
+<!-- ================= Page ================= -->
+
+  <section class="artistinfo"  data-role="page" id="artwork_Hillary_Goldwynn">
+    <header data-role="header" data-position="fixed">
+      <h1>Hillary Goldwynn-Post</h1>
+      <a href="#artists" data-icon="back" data-iconpos="notext" data-transition="slide" data-direction="reverse">Artists</a>
+    </header>
+    <article data-role="content">
+      <h1>Hillary Goldwynn-Post</h1>
+      <p><img src="images/artists/Hillary_Goldwynn_tn.jpg" alt="Sample artwork for Hillary_Goldwynn">Hillary is a sophomore art sculpture student at New York University, and has already won all the major international prizes for new painters, including the Divinity Circle, the International Painter's Medal, and the Academy of Paris Award. Hillary's CAC exhibit features paintings that contain only water images including waves, deep sea, and river.</p>
+      <section class="ui-grid-d">      
+        <div class="ui-block-a"><img src="images/artwork/Hillary_Goldwynn_01_tn.jpg" alt="Hillary Goldwynn 01"></div>
+        <div class="ui-block-b"><img src="images/artwork/Hillary_Goldwynn_02_tn.jpg" alt="Hillary Goldwynn 02"></div>
+        <div class="ui-block-c"><img src="images/artwork/Hillary_Goldwynn_03_tn.jpg" alt="Hillary Goldwynn 03"></div>
+        <div class="ui-block-d"><img src="images/artwork/Hillary_Goldwynn_04_tn.jpg" alt="Hillary Goldwynn 04"></div>
+        <div class="ui-block-e"><img src="images/artwork/Hillary_Goldwynn_05_tn.jpg" alt="Hillary Goldwynn 05"></div>
+        <div class="ui-block-a"><img src="images/artwork/Hillary_Goldwynn_06_tn.jpg" alt="Hillary Goldwynn 06"></div>
+        <div class="ui-block-b"><img src="images/artwork/Hillary_Goldwynn_07_tn.jpg" alt="Hillary Goldwynn 07"></div>
+      </section>
+    </article>
+    <footer data-role="footer" data-position="fixed">
+      <nav data-role="navbar">
+        <ul>
+          <li><a href="#home" data-icon="home">Home</a></li>
+          <li><a href="#artists" data-icon="info">artists</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </section>
+
+<!-- ================= Page ================= -->
+
+  <section class="artistinfo"  data-role="page" id="artwork_Jennifer_Jerome">
+    <header data-role="header" data-position="fixed">
+      <h1>Jennifer Jerome</h1>
+      <a href="#artists" data-icon="back" data-iconpos="notext" data-transition="slide" data-direction="reverse">Artists</a>
+    </header>
+    <article data-role="content">
+      <h1>About Jennifer Jerome</h1>
+      <p><img src="images/artists/Jennifer_Jerome_tn.jpg" alt="Sample artwork for Jennifer_Jerome">Jennifer studied psychology as an undergraduate at UCLA, but quickly discovered her heart was in painting and drawing. Always the idealist, she decided to find a way to do both, and pursued a Master's in Art Therapy. Jennifer now works as a counselor for the developmentally disabled, using art therapy to rehabilitate young adults. She feels it fulfills her purpose on the planet. Apart from career in art therapy, Jennifer paints and draws every evening and weekend, and has amassed a large body of critically acclaimed work in a very short time.</p>
+      <section class="ui-grid-d">
+        <div class="ui-block-a"><img src="images/artwork/Jennifer_Jerome_01_tn.jpg" alt="Jennifer Jerome 01"></div>
+        <div class="ui-block-b"><img src="images/artwork/Jennifer_Jerome_02_tn.jpg" alt="Jennifer Jerome 02"></div>
+        <div class="ui-block-c"><img src="images/artwork/Jennifer_Jerome_03_tn.jpg" alt="Jennifer Jerome 03"></div>
+        <div class="ui-block-d"><img src="images/artwork/Jennifer_Jerome_04_tn.jpg" alt="Jennifer Jerome 04"></div>
+      </section>
+    </article>
+    <footer data-role="footer" data-position="fixed">
+      <nav data-role="navbar">
+        <ul>
+          <li><a href="#home" data-icon="home">Home</a></li>
+          <li><a href="#artists" data-icon="info">artists</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </section>
+
+<!-- ================= Page ================= -->
+
+  <section class="artistinfo"  data-role="page" id="artwork_Jonathan_Ferrar">
+    <header data-role="header" data-position="fixed">
+      <h1>Jonathan G. Ferrar II</h1>
+      <a href="#artists" data-icon="back" data-iconpos="notext" data-transition="slide" data-direction="reverse">Artists</a>
+    </header>
+    <article data-role="content">
+      <h1>Jonathan G. Ferrar II</h1>
+      <p><img src="images/artists/Jonathan_Ferrar_tn.jpg" alt="Sample artwork for Jonathan_Ferrar">Labeled as "The Artist to Watch in 2012" by the London Review, Johnathan has already sold one of the highest priced-commissions paid to an art student, ever on record. The piece, entitled Gratitude Resort, a work in oil and mixed media, was sold for $750,000 and Jonathan donated all the proceeds to Art for Peace, an organization that provides college art scholarships for creative children in developing nations.</p>
+      <section class="ui-grid-d">
+        <div class="ui-block-a"><img src="images/artwork/Jonathan_Ferrar_01_tn.jpg" alt="Jonathan Ferrar 01"></div>
+        <div class="ui-block-b"><img src="images/artwork/Jonathan_Ferrar_02_tn.jpg" alt="Jonathan Ferrar 02"></div>
+        <div class="ui-block-c"><img src="images/artwork/Jonathan_Ferrar_03_tn.jpg" alt="Jonathan Ferrar 03"></div>
+      </section>        
+    </article>
+    <footer data-role="footer" data-position="fixed">
+      <nav data-role="navbar">
+        <ul>
+          <li><a href="#home" data-icon="home">Home</a></li>
+          <li><a href="#artists" data-icon="info">artists</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </section>
+
+  <!-- ================= Photo Pages ================= -->
+  <section data-role="page" id="showphoto">
+    <header data-role="header" data-position="fixed">
+      <h1>Show Photo</h1>
+      <a href="#" data-rel="back" data-icon="back" data-iconpos="notext">Back</a>
+    </header>
+    </div><!-- header -->
+    <div data-role="content">
+      <div id="myphoto"></div>
+    </div><!-- content -->
+  </div><!-- page -->
+
+<script src="js/jquery.js"></script>
+<script src="js/jquerymobile.js"></script>
+<script src="js/script.js"></script>
+</body>
 </html>

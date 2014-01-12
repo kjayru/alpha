@@ -1,3 +1,0 @@
-[10-Jan-2014 11:28:00] PHP Warning:  Unexpected character in input:  '\' (ASCII=92) state=1 in /home1/m3d14coz/public_html/__beta/webservice/inc/httpful.phar on line 5
-[10-Jan-2014 11:28:00] PHP Warning:  Unexpected character in input:  '\' (ASCII=92) state=1 in /home1/m3d14coz/public_html/__beta/webservice/inc/httpful.phar on line 5
-[10-Jan-2014 11:28:00] PHP Parse error:  syntax error, unexpected T_STRING in /home1/m3d14coz/public_html/__beta/webservice/inc/httpful.phar on line 5
