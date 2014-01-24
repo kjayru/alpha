@@ -1,301 +1,713 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="utf-8" />
-	<title>List App</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-	<meta name="apple-mobile-web-app-capable" content="yes" />
-	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
 
-<link rel="stylesheet" href="css/jquerymobile.css" />
-<link rel="stylesheet" href="css/style.css"></head>
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Alpha</title>
+    <link rel="stylesheet" type="text/css" href="css/jquery.mobile.theme-1.4.0.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.0.css">	
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<script src="js/jquery-1.10.2.min.js"></script>
+	<script src="js/index.js"></script>	
+	<script src="js/jquery.mobile-1.4.0.js"></script>
+</head>
 <body>
 
-<!-- ================= Home ================= -->
-<div id="home" data-role="page">
-  <article data-role="content">
-    <h1>Portfolio</h1>  
-    <p>The Roux Academy application shows you a list of our artists as well as some of their artwork.</p>
-    	<div data-role="controlgroup">
-        <a href="#artists" class="ui-btn ui-btn-icon-left ui-icon-user">Artists</a>
-    	</div>
-  </article>
+<!-- Start of first page: #one -->
+<div data-role="page" id="uno">
+
+<!-- /header -->
+<div class="logo"> </div>
+<br>
+<br>
+	<h1>¿Qué edad tienes?</h1>
+	<div role="main" class="ui-content" ><br><br>
+
+
+		  <label for="select-native-1">Dia</label>
+            <select name="select-native-1" id="select-native-1">
+                <option value="01">01</option>
+                <option value="02">02</option>
+                <option value="small">04</option>
+                <option value="small">05</option>
+                <option value="small">06</option>
+                <option value="small">07</option>
+                <option value="small">08</option>
+                <option value="small">09</option>
+                <option value="small">10</option> 
+				<option value="small">11</option>
+                <option value="small">12</option>
+                <option value="small">13</option>
+                <option value="small">14</option>
+                <option value="small">15</option>
+                <option value="small">16</option>
+                <option value="small">17</option>
+                <option value="small">18</option>
+                <option value="small">19</option 
+                 ><option value="small">20</option> 
+				<option value="small">21</option>
+                <option value="small">22</option>
+                <option value="small">23</option>
+                <option value="small">24</option>
+                <option value="small">25</option>
+                <option value="small">26</option>
+                <option value="small">27</option>
+                <option value="small">28</option>
+                <option value="small">29</option>
+                <option value="small">39</option>
+                                             
+            </select>
+          <label for="select-native-2">Mes</label>
+            <select name="select-native-2" id="select-native-2">
+               <option value="01">01</option>
+                <option value="02">02</option>
+                <option value="small">04</option>
+                <option value="small">05</option>
+                <option value="small">06</option>
+                <option value="small">07</option>
+                <option value="small">08</option>
+                <option value="small">09</option>
+                <option value="small">10</option> 
+				<option value="small">11</option>
+                <option value="small">12</option>
+            </select>
+          <label for="select-native-3">Año</label>
+            <select name="select-native-3" id="select-native-3">
+                <option value="2010">2010</option>
+                <option value="2009">2009</option>
+                <option value="2008">2008</option>
+                <option value="2007">2007</option>
+                <option value="2006">2006</option>
+                <option value="2005">2005</option>
+                <option value="2004">2004</option>
+                <option value="2003">2003</option>
+                <option value="2002">2002</option>
+                <option value="2001">2001</option>
+                <option value="2000">2000</option>
+                <option value="1999">1999</option>
+                <option value="1998">1998</option>
+                <option value="1997">1997</option>
+                <option value="1996">1996</option>
+                <option value="1995">1995</option>
+                <option value="1994">1994</option>
+                <option value="1993">1993</option>
+                <option value="1992">1992</option>
+                <option value="1991">1991</option>
+                <option value="1990">1990</option>
+                <option value="1989">1989</option>
+                <option value="1988">1988</option>
+                <option value="1987">1987</option>
+                <option value="1986">1986</option>
+                <option value="1985">1985</option>
+                <option value="1984">1984</option>
+                <option value="1983">1983</option>
+                <option value="1982">1982</option>
+                <option value="1981">1981</option>
+                <option value="1980">1980</option>
+                <option value="1979">1979</option>
+
+            </select>
+            <label for="submit-6">Send:</label>
+			<a href="#" id="test" class="ui-shadow ui-btn ui-corner-all">Ingresar</a>
+	</div>
+    <!-- /content -->
+</div><!-- /page one -->
+
+<!-- submit para scool -->
+<div data-role="page" id="scool1" data-theme="a">
+
+	<div role="main" class="ui-content" >
+<div class="logo"> </div>
+<br>
+<br>
+    	<h1>¿Listo para el desafío?
+¡Aprieta “Comenzar” y elige
+tu tipo de desafío!</h1>
+		<a href="#scool2" class="ui-shadow ui-btn ui-corner-all">Continuar</a>
+	</div><!-- /header -->
+
+	
+</div><!-- /page two -->
+<!-- submit para teens -->
+<div data-role="page" id="teens1" data-theme="a">
+
+	<div role="main" class="ui-content" >
+<div class="logo"> </div>
+<br>
+<br>
+    	<h1>¿Listo para el desafío?
+¡Aprieta “Comenzar” y elige
+tu tipo de desafío!</h1>
+		<a href="#teens2" class="ui-shadow ui-btn ui-corner-all">Continuar</a>
+	</div><!-- /header -->
+
+	
+</div><!-- /page two -->
+<!-- lista para scool -->
+<div data-role="page" id="scool2" data-theme="a">
+<div role="main" class="ui-content" >
+   <div class="logo"> </div>
+        <br>
+        <br>
+<h1>Elije tu desafio</h1>
+	<ul data-role="listview">
+
+    <li><a href="#sdesafio1">Memória</a></li>
+    <li><a href="#sdesafio2">Matemática</a></li>
+    <li><a href="#sdesafio3">Historia</a></li>
+    <li><a href="#sdesafio4">Aleatorio</a></li>
+    <li><a href="#puntaje">Ver puntaje</a></li>
+</ul>
+
+
+</div>	
+</div><!-- /page two -->
+
+<!-- lista teens -->
+<div data-role="page" id="teens2" data-theme="a">
+<div role="main" class="ui-content" >
+<div class="logo"> </div>
+<br>
+<br>
+<h1>Elije tu desafio</h1>
+	<ul data-role="listview">
+    <li><a href="#tdesafio1">Memória</a></li>
+    <li><a href="#tdesadio2">Matemática</a></li>
+    <li><a href="#tdesafio3">Historia</a></li>
+    <li><a href="#tdesafio4">Aleatorio</a></li>
+    <li><a href="#puntaje">Ver puntaje</a></li>
+</ul>
+</div>	
+</div><!-- /page two -->
+<div data-role="page" id="sdesafio1" data-theme="a">
+	<div role="main" class="ui-content" >
+        <div class="logo"> </div>
+        <br>
+        <br>
+        <h1>Desafio Memória</h1>
+        <p>A continuación
+te mostrarémos una imagen
+con unos segundos. Mírala
+aténtamente que cuando el
+tiempo termine la imagen
+desaparecerá y te haremos
+una pregunta.</p>
+<a href="#spreg1" class="ui-shadow ui-btn ui-corner-all">Comenzar</a>
+    </div>	
 </div>
 
-<!-- ================= Artists ================= -->
-<section data-role="page" id="artists">
-	<header data-role="header" data-position="fixed">
-      <a href="#home" data-icon="home" data-iconpos="notext">Home</a>
-		<h5>Artists</h5>
-	</header>
+<div data-role="page" id="sdesafio2" data-theme="a">
+	<div role="main" class="ui-content" >
+        <div class="logo"> </div>
+        <br>
+        <br>
+          <h1>Desafio Matemática</h1>
+        <p>A continuación
+te mostrarémos una imagen
+con unos segundos. Mírala
+aténtamente que cuando el
+tiempo termine la imagen
+desaparecerá y te haremos
+una pregunta.</p>
+<a href="#spreg1" class="ui-shadow ui-btn ui-corner-all">Comenzar</a>
+    </div>	
+</div>
 
-	<article data-role="content">
+<div data-role="page" id="sdesafio3" data-theme="a">
+	<div role="main" class="ui-content" >
+        <div class="logo"> </div>
+        <br>
+        <br>
+          <h1>Desafio Historia</h1>
+        <p>A continuación
+te mostrarémos una imagen
+con unos segundos. Mírala
+aténtamente que cuando el
+tiempo termine la imagen
+desaparecerá y te haremos
+una pregunta.</p>
+<a href="#spreg1" class="ui-shadow ui-btn ui-corner-all">Comenzar</a>
+    </div>	
+</div>
 
-    <form class="ui-filterable">
-        <input id="artistList" data-type="search">
-    </form>
+<div data-role="page" id="sdesafio4" data-theme="a">
+	<div role="main" class="ui-content" >
+        <div class="logo"> </div>
+        <br>
+        <br>
+          <h1>Desafio Aleatorio</h1>
+        <p>A continuación
+te mostrarémos una imagen
+con unos segundos. Mírala
+aténtamente que cuando el
+tiempo termine la imagen
+desaparecerá y te haremos
+una pregunta.</p>
+<a href="#spreg1" class="ui-shadow ui-btn ui-corner-all">Comenzar</a>
+    </div>	
+</div>
 
-		<ul data-role="listview"  data-filter="true" data-input="#artistList">
-<li><a href="#artwork_Barot_Bellingham" data-transition="slide" data-transition="slide">
-    <img src="images/artists/Barot_Bellingham_tn.jpg" alt="Sample artwork for Barot_Bellingham">
-    <h1>Barot Bellingham</h1>
-    <p>Barot can trace his decision to become an artist to the ripe old age of two, when his mother put his first crayon painting on the refrigerator. From that point on, he was obsessed with art, and began creating mature works of art as early as five years old. A child prodigy, Barot sold his first professional painting at the age of nine for $2000, and was guest lecturing on art by the time he was eleven.</p>
-  </a></li>
-<li><a href="#artwork_Constance_Smith" data-transition="slide">
-    <img src="images/artists/Constance_Smith_tn.jpg" alt="Sample artwork for Constance_Smith">
-    <h1>Constance Olivia Smith</h1>
-    <p>Constance received the Fullerton-Brighton-Norwell Award for Modern Art for her mixed-media image of a tree of life, with jewel-adorned branches depicting the arms of humanity, and precious gemstone-decorated leaves representing the spouting buds of togetherness. The daughter of a New York jeweler, Constance has been salvaging the discarded remnants of her father's jewelry-making since she was five years old, and won the New York State Fair grand prize at the age of 8 years old for a gem-adorned painting of the Manhattan Bridge.</p>
-  </a></li>
-<li><a href="#artwork_Gerard_Donahue" data-transition="slide">
-    <img src="images/artists/Gerard_Donahue_tn.jpg" alt="Sample artwork for Gerard_Donahue">
-    <h1>Gerard Kent Donahue</h1>
-    <p>Art is in Gerard's genes. His father, Maston Gerard Donahue was a sculptor who helped create some of the most notable statues of our time, including the "Windmill of Time" in Washington, D.C. His mother Lillian Paxton Donahue, is a landscape painter who supported the family full-time by the sale of her paintings, after the untimely death of Gerard's father when Gerard was just 13. Gerard learned the early lessons in sculpting from his father, and continues to study sculpture as his life's passion, partially to complete the legacy of his father, and partially to forge this own destiny as an accomplished sculptor. He is currently the Renton Scholar at Deschton University in Vienna Austria, and is completing his artist in residence commitment for the next year.</p>
-  </a></li>
-<li><a href="#artwork_Hassum_Harrod" data-transition="slide">
-    <img src="images/artists/Hassum_Harrod_tn.jpg" alt="Sample artwork for Hassum_Harrod">
-    <h1>Hassum Harrod</h1>
-    <p>The Art College in New Dehli sponsored Hassum on scholarship for his entire undergraduate career at the university, seeing great promise in his contemporary paintings of landscapes - that use equal parts muted and vibrant tones, and are almost a contradiction in art. Expected to follow in his grandfather's and father's footsteps and become an engineer, Hassum followed his heart and never looked back. Currently, Hassum is studying for his MFA at San Francisco Art Academy, where he has become known for his impressive color theories and one-of-a-kind color palettes – and has amassed an extensive underground following.</p>
-  </a></li>
-<li><a href="#artwork_Hillary_Goldwynn" data-transition="slide">
-    <img src="images/artists/Hillary_Goldwynn_tn.jpg" alt="Sample artwork for Hillary_Goldwynn">
-    <h1>Hillary Goldwynn-Post</h1>
-    <p>Hillary is a sophomore art sculpture student at New York University, and has already won all the major international prizes for new painters, including the Divinity Circle, the International Painter's Medal, and the Academy of Paris Award. Hillary's CAC exhibit features paintings that contain only water images including waves, deep sea, and river.</p>
-  </a></li>
-<li><a href="#artwork_Jennifer_Jerome" data-transition="slide">
-    <img src="images/artists/Jennifer_Jerome_tn.jpg" alt="Sample artwork for Jennifer_Jerome">
-    <h1>Jennifer Jerome</h1>
-    <p>Jennifer studied psychology as an undergraduate at UCLA, but quickly discovered her heart was in painting and drawing. Always the idealist, she decided to find a way to do both, and pursued a Master's in Art Therapy. Jennifer now works as a counselor for the developmentally disabled, using art therapy to rehabilitate young adults. She feels it fulfills her purpose on the planet. Apart from career in art therapy, Jennifer paints and draws every evening and weekend, and has amassed a large body of critically acclaimed work in a very short time.</p>
-  </a></li>
-<li><a href="#artwork_Jonathan_Ferrar" data-transition="slide">
-    <img src="images/artists/Jonathan_Ferrar_tn.jpg" alt="Sample artwork for Jonathan_Ferrar">
-    <h1>Jonathan G. Ferrar II</h1>
-    <p>Labeled as "The Artist to Watch in 2012" by the London Review, Johnathan has already sold one of the highest priced-commissions paid to an art student, ever on record. The piece, entitled Gratitude Resort, a work in oil and mixed media, was sold for $750,000 and Jonathan donated all the proceeds to Art for Peace, an organization that provides college art scholarships for creative children in developing nations.</p>
-  </a></li>
-		</ul>
-	</article>
-    <footer data-role="footer" data-position="fixed">
-      <nav data-role="navbar">
-        <ul>
-          <li><a href="#home" data-icon="home">Home</a></li>
-          <li><a href="#artists" data-icon="info">artists</a></li>
-        </ul>
-      </nav>
-    </footer>
-</section><!-- Page Photos -->
 
-<!-- ================= Photo Pages ================= -->
 
-	<section class="artistinfo" data-role="page" id="artwork_Barot_Bellingham">
-		<header data-role="header" data-position="fixed">
-			<h1>Barot Bellingham</h1>
-      <a href="#artists" data-icon="back" data-iconpos="notext" data-transition="slide" data-direction="reverse">Artists</a>
-		</header>
-    <article data-role="content">
-      <h2>About Barot Bellingham</h2>
-      <p><img src="images/artists/Barot_Bellingham_tn.jpg" alt="Barot Bellingham">Barot can trace his decision to become an artist to the ripe old age of two, when his mother put his first crayon painting on the refrigerator. From that point on, he was obsessed with art, and began creating mature works of art as early as five years old. A child prodigy, Barot sold his first professional painting at the age of nine for $2000, and was guest lecturing on art by the time he was eleven.</p>
+<div data-role="page" id="tdesafio1" data-theme="a">
+	<div role="main" class="ui-content" >
+        <div class="logo"> </div>
+        <br>
+        <br>
+          <h1>Desafio Memória</h1>
+        <p>A continuación
+te mostrarémos una imagen
+con unos segundos. Mírala
+aténtamente que cuando el
+tiempo termine la imagen
+desaparecerá y te haremos
+una pregunta.</p>
+<a href="#tpreg1" class="ui-shadow ui-btn ui-corner-all">Comenzar</a>
+    </div>	
+</div>
 
-      <h3>Artwork</h3>
-      <section class="ui-grid-d">
-        <div class="ui-block-a"><img src="images/artwork/Barot_Bellingham_01_tn.jpg" alt="Barot Bellingham 01"></div>
-        <div class="ui-block-b"><img src="images/artwork/Barot_Bellingham_02_tn.jpg" alt="Barot Bellingham 02"></div>
-        <div class="ui-block-c"><img src="images/artwork/Barot_Bellingham_03_tn.jpg" alt="Barot Bellingham 03"></div>
-        <div class="ui-block-d"><img src="images/artwork/Barot_Bellingham_04_tn.jpg" alt="Barot Bellingham 04"></div>
-        <div class="ui-block-e"><img src="images/artwork/Barot_Bellingham_05_tn.jpg" alt="Barot Bellingham 05"></div>
-        <div class="ui-block-a"><img src="images/artwork/Barot_Bellingham_06_tn.jpg" alt="Barot Bellingham 06"></div>
-        <div class="ui-block-b"><img src="images/artwork/Barot_Bellingham_07_tn.jpg" alt="Barot Bellingham 07"></div>
-      </section>
-    </article>
-    <footer data-role="footer" data-position="fixed">
-      <nav data-role="navbar">
-        <ul>
-          <li><a href="#home" data-icon="home">Home</a></li>
-          <li><a href="#artists" data-icon="info">artists</a></li>
-        </ul>
-      </nav>
-    </footer>
-  </section>
+<div data-role="page" id="tdesafio2" data-theme="a">
+	<div role="main" class="ui-content" >
+        <div class="logo"> </div>
+        <br>
+        <br>
+         <h1>Desafio matemática</h1>
+        <p>A continuación
+te mostrarémos una imagen
+con unos segundos. Mírala
+aténtamente que cuando el
+tiempo termine la imagen
+desaparecerá y te haremos
+una pregunta.</p>
+<a href="#tpreg1" class="ui-shadow ui-btn ui-corner-all">Comenzar</a>
+    </div>	
+</div>
 
-<!-- ================= Page ================= -->
+<div data-role="page" id="tdesafio3" data-theme="a">
+	<div role="main" class="ui-content" >
+        <div class="logo"> </div>
+        <br>
+        <br>
+         <h1>Desafio Historia</h1>
+        <p>A continuación
+te mostrarémos una imagen
+con unos segundos. Mírala
+aténtamente que cuando el
+tiempo termine la imagen
+desaparecerá y te haremos
+una pregunta.</p>
+<a href="#tpreg1" class="ui-shadow ui-btn ui-corner-all">Comenzar</a>
+    </div>	
+</div>
 
-  <section class="artistinfo" data-role="page" id="artwork_Constance_Smith">
-    <header data-role="header" data-position="fixed">
-      <h1>Constance Olivia Smith</h1>
-      <a href="#artists" data-icon="back" data-iconpos="notext" data-transition="slide" data-direction="reverse">Artists</a>
-    </header>
-    <article data-role="content">
-      <h2>About Constance Olivia Smith</h2>
-      <p><img src="images/artists/Constance_Smith_tn.jpg" alt="Barot Bellingham">Constance received the Fullerton-Brighton-Norwell Award for Modern Art for her mixed-media image of a tree of life, with jewel-adorned branches depicting the arms of humanity, and precious gemstone-decorated leaves representing the spouting buds of togetherness. The daughter of a New York jeweler, Constance has been salvaging the discarded remnants of her father's jewelry-making since she was five years old, and won the New York State Fair grand prize at the age of 8 years old for a gem-adorned painting of the Manhattan Bridge.</p>
-      <section class="ui-grid-d">
-        <div class="ui-block-a"><img src="images/artwork/Constance_Smith_01_tn.jpg" alt="Constance Smith 01"></div>
-        <div class="ui-block-b"><img src="images/artwork/Constance_Smith_02_tn.jpg" alt="Constance Smith 02"></div>
-        <div class="ui-block-c"><img src="images/artwork/Constance_Smith_03_tn.jpg" alt="Constance Smith 03"></div>
-        <div class="ui-block-d"><img src="images/artwork/Constance_Smith_04_tn.jpg" alt="Constance Smith 04"></div>
-        <div class="ui-block-e"><img src="images/artwork/Constance_Smith_05_tn.jpg" alt="Constance Smith 05"></div>
-      </section>
-    </article>
-    <footer data-role="footer" data-position="fixed">
-      <nav data-role="navbar">
-        <ul>
-          <li><a href="#home" data-icon="home">Home</a></li>
-          <li><a href="#artists" data-icon="info">artists</a></li>
-        </ul>
-      </nav>
-    </footer>
-  </section>
+<div data-role="page" id="tdesafio4" data-theme="a">
+	<div role="main" class="ui-content" >
+        <div class="logo"> </div>
+        <br>
+        <br>
+         <h1>Desafio Aleatorio</h1>
+        <p>A continuación
+te mostrarémos una imagen
+con unos segundos. Mírala
+aténtamente que cuando el
+tiempo termine la imagen
+desaparecerá y te haremos
+una pregunta.</p>
+<a href="#tpreg1" class="ui-shadow ui-btn ui-corner-all">Comenzar</a>
+    </div>	
+</div>
+<!-- Pregunta1 -->
+<div data-role="page" id="spreg1" data-theme="a">
+	<div role="main" class="ui-content" >
+        <div class="logo"> </div>
+        <br>
+        <br>
+        <br>
+        
+        <p>El Alpha Bus recogió a 4 personas del parque y adentro ya habían 10 personas. En la siguiente 
 
-<!-- ================= Page ================= -->
+parada bajan 5 personas. Finalmente, subieron 2 personas más. ¿Cuántas personas hay ahora en 
 
-  <section class="artistinfo"  data-role="page" id="artwork_Gerard_Donahue">
-    <header data-role="header" data-position="fixed">
-      <h1>Gerard Kent Donahue</h1>
-      <a href="#artists" data-icon="back" data-iconpos="notext" data-transition="slide" data-direction="reverse">Artists</a>
-    </header>
-    <article data-role="content">
-      <h1>About Gerard Kent Donahue</h1>
-      <p><img src="images/artists/Gerard_Donahue_tn.jpg" alt="Sample artwork for Gerard_Donahue">Art is in Gerard's genes. His father, Maston Gerard Donahue was a sculptor who helped create some of the most notable statues of our time, including the "Windmill of Time" in Washington, D.C. His mother Lillian Paxton Donahue, is a landscape painter who supported the family full-time by the sale of her paintings, after the untimely death of Gerard's father when Gerard was just 13. Gerard learned the early lessons in sculpting from his father, and continues to study sculpture as his life's passion, partially to complete the legacy of his father, and partially to forge this own destiny as an accomplished sculptor. He is currently the Renton Scholar at Deschton University in Vienna Austria, and is completing his artist in residence commitment for the next year.</p>
-      <section class="ui-grid-d">
-        <div class="ui-block-a"><img src="images/artwork/Gerard_Donahue_01_tn.jpg" alt="Gerard Donahue 01"></div>
-        <div class="ui-block-b"><img src="images/artwork/Gerard_Donahue_02_tn.jpg" alt="Gerard Donahue 02"></div>
-        <div class="ui-block-c"><img src="images/artwork/Gerard_Donahue_03_tn.jpg" alt="Gerard Donahue 03"></div>
-        <div class="ui-block-d"><img src="images/artwork/Gerard_Donahue_04_tn.jpg" alt="Gerard Donahue 04"></div>
-      </section>
-    </article>
-    <footer data-role="footer" data-position="fixed">
-      <nav data-role="navbar">
-        <ul>
-          <li><a href="#home" data-icon="home">Home</a></li>
-          <li><a href="#artists" data-icon="info">artists</a></li>
-        </ul>
-      </nav>
-    </footer>
-  </section>
+el Alpha Bus?</p>
+        <a href="#spreg2" class="ui-shadow ui-btn ui-corner-all">7</a>
+         <a href="#spreg2" class="ui-shadow ui-btn ui-corner-all">8</a>
+          <a href="#spreg2" class="ui-shadow ui-btn ui-corner-all">10</a>
+           <a href="#spreg2" class="ui-shadow ui-btn ui-corner-all">14</a>  
+    </div>	
+</div>
 
-<!-- ================= Page ================= -->
+<!-- Pregunta2 -->
+<div data-role="page" id="spreg2" data-theme="a">
+    <div role="main" class="ui-content" >
+        <div class="logo"> </div>
+        <br>
+        <br>
+        <p><img src="img/Grau.png" ></p>
+        <p>Dinos quién es este héroe. Alphatip: caballero de los mares</p>
+      <a href="#spreg3" class="ui-shadow ui-btn ui-corner-all">Alfonso Ugarte</a>
+         <a href="#spreg3" class="ui-shadow ui-btn ui-corner-all">Pachacutec</a>
+          <a href="#spreg3" class="ui-shadow ui-btn ui-corner-all">Miguel Grau</a>
+           <a href="#spreg3" class="ui-shadow ui-btn ui-corner-all">San Martin</a>
+    </div>	
+</div>
 
-  <section class="artistinfo"  data-role="page" id="artwork_Hassum_Harrod">
-    <header data-role="header" data-position="fixed">
-      <h1>Hassum Harrod</h1>
-      <a href="#artists" data-icon="back" data-iconpos="notext" data-transition="slide" data-direction="reverse">Artists</a>
-    </header>
-    <article data-role="content">
-      <h1>About Hassum Harrod</h1>
-      <p><img src="images/artists/Hassum_Harrod_tn.jpg" alt="Sample artwork for Hassum_Harrod">The Art College in New Dehli sponsored Hassum on scholarship for his entire undergraduate career at the university, seeing great promise in his contemporary paintings of landscapes - that use equal parts muted and vibrant tones, and are almost a contradiction in art. Expected to follow in his grandfather's and father's footsteps and become an engineer, Hassum followed his heart and never looked back. Currently, Hassum is studying for his MFA at San Francisco Art Academy, where he has become known for his impressive color theories and one-of-a-kind color palettes – and has amassed an extensive underground following.</p>
-      <section class="ui-grid-d">
-        <div class="ui-block-a"><img src="images/artwork/Hassum_Harrod_01_tn.jpg" alt="Hassum Harrod 01"></div>
-        <div class="ui-block-b"><img src="images/artwork/Hassum_Harrod_02_tn.jpg" alt="Hassum Harrod 02"></div>
-        <div class="ui-block-c"><img src="images/artwork/Hassum_Harrod_03_tn.jpg" alt="Hassum Harrod 03"></div>
-        <div class="ui-block-d"><img src="images/artwork/Hassum_Harrod_04_tn.jpg" alt="Hassum Harrod 04"></div>
-        <div class="ui-block-e"><img src="images/artwork/Hassum_Harrod_05_tn.jpg" alt="Hassum_Harrod_05"></div>
-        <div class="ui-block-a"><img src="images/artwork/Hassum_Harrod_06_tn.jpg" alt="Hassum_Harrod_06"></div>
-      </section>
-    </article>
-    <footer data-role="footer" data-position="fixed">
-      <nav data-role="navbar">
-        <ul>
-          <li><a href="#home" data-icon="home">Home</a></li>
-          <li><a href="#artists" data-icon="info">artists</a></li>
-        </ul>
-      </nav>
-    </footer>
-  </section>
+<!-- Pregunta3 -->
+<div data-role="page" id="spreg3" data-theme="a">
+    <div role="main" class="ui-content" >
+        <div class="logo"> </div>
+        <br>
+        <br>
+        <p>¿ Mario tenía 10 helados en la refrigeradora. Cuando regresó del colegio se dio con la sorpresa 
 
-<!-- ================= Page ================= -->
+que le quedaban 5. Le contó a su mamá lo que había pasado y ella le dijo que le iba comprar una 
 
-  <section class="artistinfo"  data-role="page" id="artwork_Hillary_Goldwynn">
-    <header data-role="header" data-position="fixed">
-      <h1>Hillary Goldwynn-Post</h1>
-      <a href="#artists" data-icon="back" data-iconpos="notext" data-transition="slide" data-direction="reverse">Artists</a>
-    </header>
-    <article data-role="content">
-      <h1>Hillary Goldwynn-Post</h1>
-      <p><img src="images/artists/Hillary_Goldwynn_tn.jpg" alt="Sample artwork for Hillary_Goldwynn">Hillary is a sophomore art sculpture student at New York University, and has already won all the major international prizes for new painters, including the Divinity Circle, the International Painter's Medal, and the Academy of Paris Award. Hillary's CAC exhibit features paintings that contain only water images including waves, deep sea, and river.</p>
-      <section class="ui-grid-d">      
-        <div class="ui-block-a"><img src="images/artwork/Hillary_Goldwynn_01_tn.jpg" alt="Hillary Goldwynn 01"></div>
-        <div class="ui-block-b"><img src="images/artwork/Hillary_Goldwynn_02_tn.jpg" alt="Hillary Goldwynn 02"></div>
-        <div class="ui-block-c"><img src="images/artwork/Hillary_Goldwynn_03_tn.jpg" alt="Hillary Goldwynn 03"></div>
-        <div class="ui-block-d"><img src="images/artwork/Hillary_Goldwynn_04_tn.jpg" alt="Hillary Goldwynn 04"></div>
-        <div class="ui-block-e"><img src="images/artwork/Hillary_Goldwynn_05_tn.jpg" alt="Hillary Goldwynn 05"></div>
-        <div class="ui-block-a"><img src="images/artwork/Hillary_Goldwynn_06_tn.jpg" alt="Hillary Goldwynn 06"></div>
-        <div class="ui-block-b"><img src="images/artwork/Hillary_Goldwynn_07_tn.jpg" alt="Hillary Goldwynn 07"></div>
-      </section>
-    </article>
-    <footer data-role="footer" data-position="fixed">
-      <nav data-role="navbar">
-        <ul>
-          <li><a href="#home" data-icon="home">Home</a></li>
-          <li><a href="#artists" data-icon="info">artists</a></li>
-        </ul>
-      </nav>
-    </footer>
-  </section>
+docena de helados ¿Cuántos helado tendrá Mario?</p>
+        <a href="#spreg4" class="ui-shadow ui-btn ui-corner-all">15</a>
+         <a href="#spreg4" class="ui-shadow ui-btn ui-corner-all">10</a>
+          <a href="#spreg4" class="ui-shadow ui-btn ui-corner-all">17</a>
+           <a href="#spreg4" class="ui-shadow ui-btn ui-corner-all">13</a>
+        
+    </div>	
+</div>
 
-<!-- ================= Page ================= -->
+<!-- Pregunta4 -->
+<div data-role="page" id="spreg4" data-theme="a">
+    <div role="main" class="ui-content" >
+        <div class="logo"> </div>
+        <br>
+        <br>
+        <p><img src="img/Macchupicchu.png"></p>
+        <p>En Perú, tenemos una de las 7 maravillas del nuevo mundo ¿Sabemos cómo se llama?</p>
+         <a href="#spreg5" class="ui-shadow ui-btn ui-corner-all">Machu Picchu</a>
+         <a href="#spreg5" class="ui-shadow ui-btn ui-corner-all">Pajaten</a>
+          <a href="#spreg5" class="ui-shadow ui-btn ui-corner-all">Cerro maya</a>
+           <a href="#spreg5" class="ui-shadow ui-btn ui-corner-all">Ruinas Wari</a>
+       
+    </div>	
+</div>
 
-  <section class="artistinfo"  data-role="page" id="artwork_Jennifer_Jerome">
-    <header data-role="header" data-position="fixed">
-      <h1>Jennifer Jerome</h1>
-      <a href="#artists" data-icon="back" data-iconpos="notext" data-transition="slide" data-direction="reverse">Artists</a>
-    </header>
-    <article data-role="content">
-      <h1>About Jennifer Jerome</h1>
-      <p><img src="images/artists/Jennifer_Jerome_tn.jpg" alt="Sample artwork for Jennifer_Jerome">Jennifer studied psychology as an undergraduate at UCLA, but quickly discovered her heart was in painting and drawing. Always the idealist, she decided to find a way to do both, and pursued a Master's in Art Therapy. Jennifer now works as a counselor for the developmentally disabled, using art therapy to rehabilitate young adults. She feels it fulfills her purpose on the planet. Apart from career in art therapy, Jennifer paints and draws every evening and weekend, and has amassed a large body of critically acclaimed work in a very short time.</p>
-      <section class="ui-grid-d">
-        <div class="ui-block-a"><img src="images/artwork/Jennifer_Jerome_01_tn.jpg" alt="Jennifer Jerome 01"></div>
-        <div class="ui-block-b"><img src="images/artwork/Jennifer_Jerome_02_tn.jpg" alt="Jennifer Jerome 02"></div>
-        <div class="ui-block-c"><img src="images/artwork/Jennifer_Jerome_03_tn.jpg" alt="Jennifer Jerome 03"></div>
-        <div class="ui-block-d"><img src="images/artwork/Jennifer_Jerome_04_tn.jpg" alt="Jennifer Jerome 04"></div>
-      </section>
-    </article>
-    <footer data-role="footer" data-position="fixed">
-      <nav data-role="navbar">
-        <ul>
-          <li><a href="#home" data-icon="home">Home</a></li>
-          <li><a href="#artists" data-icon="info">artists</a></li>
-        </ul>
-      </nav>
-    </footer>
-  </section>
+<!-- Pregunta5 -->
+<div data-role="page" id="spreg5" data-theme="a">
+    <div role="main" class="ui-content" >
+        <div class="logo"> </div>
+        <br>
+        <br>
+        <p><img src="img/gallito.png" ></p>
+        <p>¿ Esta es el ave nacional del Perú ¿Sabes cómo se llama?</p>
+        <a href="#spreg6" class="ui-shadow ui-btn ui-corner-all">Pavito rojo</a>
+         <a href="#spreg6" class="ui-shadow ui-btn ui-corner-all">Gallito de las Rocas</a>
+          <a href="#spreg6" class="ui-shadow ui-btn ui-corner-all">Paujil</a>
+           <a href="#spreg6" class="ui-shadow ui-btn ui-corner-all">Tucan</a>
+       
+    </div>	
+</div>
 
-<!-- ================= Page ================= -->
+<!-- Pregunta6 -->
+<div data-role="page" id="spreg6" data-theme="a">
+    <div role="main" class="ui-content" >
+        <div class="logo"> </div>
+        <br>
+        <br>
+        <p><img src="img/Bolognesi.png" >
+        </p>
+        <p> Este héroe dijo alguna vez: "¡Hasta quemar el último cartucho!" ¿Lo reconoces?</p>
+         <a href="#spreg7" class="ui-shadow ui-btn ui-corner-all">Andres Caceres</a>
+         <a href="#spreg7" class="ui-shadow ui-btn ui-corner-all">Alfonso Ugarte</a>
+          <a href="#spreg7" class="ui-shadow ui-btn ui-corner-all">Francisco Bolognesi</a>
+           <a href="#spreg7" class="ui-shadow ui-btn ui-corner-all">Jose Olaya</a>
+      
+    </div>	
+</div>
 
-  <section class="artistinfo"  data-role="page" id="artwork_Jonathan_Ferrar">
-    <header data-role="header" data-position="fixed">
-      <h1>Jonathan G. Ferrar II</h1>
-      <a href="#artists" data-icon="back" data-iconpos="notext" data-transition="slide" data-direction="reverse">Artists</a>
-    </header>
-    <article data-role="content">
-      <h1>Jonathan G. Ferrar II</h1>
-      <p><img src="images/artists/Jonathan_Ferrar_tn.jpg" alt="Sample artwork for Jonathan_Ferrar">Labeled as "The Artist to Watch in 2012" by the London Review, Johnathan has already sold one of the highest priced-commissions paid to an art student, ever on record. The piece, entitled Gratitude Resort, a work in oil and mixed media, was sold for $750,000 and Jonathan donated all the proceeds to Art for Peace, an organization that provides college art scholarships for creative children in developing nations.</p>
-      <section class="ui-grid-d">
-        <div class="ui-block-a"><img src="images/artwork/Jonathan_Ferrar_01_tn.jpg" alt="Jonathan Ferrar 01"></div>
-        <div class="ui-block-b"><img src="images/artwork/Jonathan_Ferrar_02_tn.jpg" alt="Jonathan Ferrar 02"></div>
-        <div class="ui-block-c"><img src="images/artwork/Jonathan_Ferrar_03_tn.jpg" alt="Jonathan Ferrar 03"></div>
-      </section>        
-    </article>
-    <footer data-role="footer" data-position="fixed">
-      <nav data-role="navbar">
-        <ul>
-          <li><a href="#home" data-icon="home">Home</a></li>
-          <li><a href="#artists" data-icon="info">artists</a></li>
-        </ul>
-      </nav>
-    </footer>
-  </section>
+<!-- Pregunta7 -->
+<div data-role="page" id="spreg7" data-theme="a">
+    <div role="main" class="ui-content" >
+        <div class="logo"> </div>
+        <br>
+        <br>
+        <p><img src="img/MancoCapac.png" ></p>
+        <p>¿Fundo el imperio de los Incas?</p>
+          <a href="#spreg8" class="ui-shadow ui-btn ui-corner-all">Huaynacapac</a>
+         <a href="#spreg8"class="ui-shadow ui-btn ui-corner-all">Wiracocha</a>
+          <a href="#spreg8" class="ui-shadow ui-btn ui-corner-all">Manco capac</a>
+           <a href="#spreg8" class="ui-shadow ui-btn ui-corner-all">Pachacutec</a>
+     
+    </div>	
+</div>
 
-  <!-- ================= Photo Pages ================= -->
-  <section data-role="page" id="showphoto">
-    <header data-role="header" data-position="fixed">
-      <h1>Show Photo</h1>
-      <a href="#" data-rel="back" data-icon="back" data-iconpos="notext">Back</a>
-    </header>
-    </div><!-- header -->
-    <div data-role="content">
-      <div id="myphoto"></div>
-    </div><!-- content -->
-  </div><!-- page -->
+<!-- Pregunta8 -->
+<div data-role="page" id="spreg8" data-theme="a">
+    <div role="main" class="ui-content" >
+        <div class="logo"> </div>
+        <br>
+        <br>
+        <p> Recuerdas ¿cuál era la capital del Imperio Inka?</p>
+         <a href="#spreg9" class="ui-shadow ui-btn ui-corner-all">Cuzco</a>
+         <a href="#spreg9" class="ui-shadow ui-btn ui-corner-all">Arequipa</a>
+          <a href="#spreg9" class="ui-shadow ui-btn ui-corner-all">Lima</a>
+           <a href="#spreg9" class="ui-shadow ui-btn ui-corner-all">Trujillo</a>
+       
+    </div>	
+</div>
 
-<script src="js/jquery.js"></script>
-<script src="js/jquerymobile.js"></script>
-<script src="js/script.js"></script>
+<!-- Pregunta9 -->
+<div data-role="page" id="spreg9" data-theme="a">
+    <div role="main" class="ui-content" >
+        <div class="logo"> </div>
+        <br>
+        <br>
+        <p>¿Sabes cuántos océanos hay?</p>
+           <a href="#spreg10" class="ui-shadow ui-btn ui-corner-all">5</a>
+           <a href="#spreg10" class="ui-shadow ui-btn ui-corner-all">4</a>
+          <a href="#spreg10" class="ui-shadow ui-btn ui-corner-all">7</a>
+           <a href="#spreg10" class="ui-shadow ui-btn ui-corner-all">6</a>
+     
+    </div>	
+</div>
+
+<!-- Pregunta10 scool -->
+<div data-role="page" id="spreg10" data-theme="a">
+    <div role="main" class="ui-content" >
+        <div class="logo"> </div>
+        <br>
+        <br>
+         <p>¿Sabes cuál es el país más grande del mundo?</p>
+   <a href="#final1" class="ui-shadow ui-btn ui-corner-all">Brasil</a> 
+           <a href="#final1" class="ui-shadow ui-btn ui-corner-all">Estados Unidos</a>
+         <a href="#final1" class="ui-shadow ui-btn ui-corner-all">China</a>
+          <a href="#final1" class="ui-shadow ui-btn ui-corner-all">Rusia</a>
+          
+   
+    </div>	
+</div>
+
+
+<!-- Pregunta1 -->
+<div data-role="page" id="tpreg1" data-theme="a">
+    <div role="main" class="ui-content" >
+        <div class="logo"> </div>
+        <br>
+        <br>
+        <p>¿Sabes cuál es el país más grande del mundo?</p>
+        <a href="#tpreg2" class="ui-shadow ui-btn ui-corner-all">Brasil</a> 
+          <a href="#tpreg2" class="ui-shadow ui-btn ui-corner-all">Estados Unidos</a>
+          <a href="#tpreg2" class="ui-shadow ui-btn ui-corner-all">China</a>
+          <a href="#tpreg2" class="ui-shadow ui-btn ui-corner-all">Rusia</a>
+    </div>	
+</div>
+
+<!-- Pregunta2 -->
+<div data-role="page" id="tpreg2" data-theme="a">
+    <div role="main" class="ui-content" >
+        <div class="logo"> </div>
+        <br>
+        <br>
+         <p>¿Sabes cuántos océanos hay?</p>
+           <a href="#tpreg3" class="ui-shadow ui-btn ui-corner-all">5</a>
+           <a href="#tpreg3" class="ui-shadow ui-btn ui-corner-all">4</a>
+          <a href="#tpreg3" class="ui-shadow ui-btn ui-corner-all">7</a>
+           <a href="#tpreg3" class="ui-shadow ui-btn ui-corner-all">6</a>
+    </div>	
+</div>
+
+<!-- Pregunta3 -->
+<div data-role="page" id="tpreg3" data-theme="a">
+    <div role="main" class="ui-content" >
+        <div class="logo"> </div>
+        <br>
+        <br>
+         <p><img src="img/Bolognesi.png" >
+        </p>
+        <p> Este héroe dijo alguna vez: "¡Hasta quemar el último cartucho!" ¿Lo reconoces?</p>
+         <a href="#tpreg4" class="ui-shadow ui-btn ui-corner-all">Andres Caceres</a>
+         <a href="#tpreg4" class="ui-shadow ui-btn ui-corner-all">Alfonso Ugarte</a>
+          <a href="#tpreg4" class="ui-shadow ui-btn ui-corner-all">Francisco Bolognesi</a>
+           <a href="#tpreg4" class="ui-shadow ui-btn ui-corner-all">Jose Olaya</a>
+    </div>	
+</div>
+
+<!-- Pregunta4 -->
+<div data-role="page" id="tpreg4" data-theme="a">
+    <div role="main" class="ui-content" >
+        <div class="logo"> </div>
+        <br>
+        <br>
+        <p><img src="img/gallito.png" ></p>
+        <p>¿ Esta es el ave nacional del Perú ¿Sabes cómo se llama?</p>
+        <a href="#tpreg5" class="ui-shadow ui-btn ui-corner-all">Pavito rojo</a>
+         <a href="#tpreg5" class="ui-shadow ui-btn ui-corner-all">Gallito de las Rocas</a>
+          <a href="#tpreg5" class="ui-shadow ui-btn ui-corner-all">Paujil</a>
+           <a href="#tpreg5" class="ui-shadow ui-btn ui-corner-all">Tucan</a>
+    </div>	
+</div>
+
+<!-- Pregunta5 -->
+<div data-role="page" id="tpreg5" data-theme="a">
+    <div role="main" class="ui-content" >
+        <div class="logo"> </div>
+        <br>
+        <br>
+         <p>El Alpha Bus recogió a 4 personas del parque y adentro ya habían 10 personas. En la siguiente 
+
+parada bajan 5 personas. Finalmente, subieron 2 personas más. ¿Cuántas personas hay ahora en 
+
+el Alpha Bus?</p>
+        <a href="#tpreg6" class="ui-shadow ui-btn ui-corner-all">7</a>
+         <a href="#tpreg6" class="ui-shadow ui-btn ui-corner-all">8</a>
+          <a href="#tpreg6" class="ui-shadow ui-btn ui-corner-all">10</a>
+           <a href="#tpreg6" class="ui-shadow ui-btn ui-corner-all">14</a> 
+    </div>	
+</div>
+
+<!-- Pregunta6 -->
+<div data-role="page" id="tpreg6" data-theme="a">
+    <div role="main" class="ui-content" >
+        <div class="logo"> </div>
+        <br>
+        <br>
+         <p><img src="img/MancoCapac.png" ></p>
+        <p>¿Fundo el imperio de los Incas?</p>
+          <a href="#tpreg7" class="ui-shadow ui-btn ui-corner-all">Huaynacapac</a>
+         <a href="#tpreg7"class="ui-shadow ui-btn ui-corner-all">Wiracocha</a>
+          <a href="#tpreg7" class="ui-shadow ui-btn ui-corner-all">Manco capac</a>
+           <a href="#tpreg7" class="ui-shadow ui-btn ui-corner-all">Pachacutec</a>
+    </div>	
+</div>
+
+<!-- Pregunta7 -->
+<div data-role="page" id="tpreg7" data-theme="a">
+    <div role="main" class="ui-content" >
+        <div class="logo"> </div>
+        <br>
+        <br>
+          <p><img src="img/Grau.png" ></p>
+        <p>Dinos quién es este héroe. Alphatip: caballero de los mares</p>
+      <a href="#tpreg8" class="ui-shadow ui-btn ui-corner-all">Alfonso Ugarte</a>
+         <a href="#tpreg8" class="ui-shadow ui-btn ui-corner-all">Pachacutec</a>
+          <a href="#tpreg8" class="ui-shadow ui-btn ui-corner-all">Miguel Grau</a>
+           <a href="#tpreg8" class="ui-shadow ui-btn ui-corner-all">San Martin</a>
+    </div>	
+</div>
+
+<!-- Pregunta8 -->
+<div data-role="page" id="tpreg8" data-theme="a">
+    <div role="main" class="ui-content" >
+        <div class="logo"> </div>
+        <br>
+        <br>
+          <p> Recuerdas ¿cuál era la capital del Imperio Inka?</p>
+         <a href="#tpreg9" class="ui-shadow ui-btn ui-corner-all">Cuzco</a>
+         <a href="#tpreg9" class="ui-shadow ui-btn ui-corner-all">Arequipa</a>
+          <a href="#tpreg9" class="ui-shadow ui-btn ui-corner-all">Lima</a>
+           <a href="#tpreg9" class="ui-shadow ui-btn ui-corner-all">Trujillo</a>
+    </div>	
+</div>
+
+<!-- Pregunta9 -->
+<div data-role="page" id="tpreg9" data-theme="a">
+    <div role="main" class="ui-content" >
+        <div class="logo"> </div>
+        <br>
+        <br>
+         <p>¿ Mario tenía 10 helados en la refrigeradora. Cuando regresó del colegio se dio con la sorpresa 
+
+que le quedaban 5. Le contó a su mamá lo que había pasado y ella le dijo que le iba comprar una 
+
+docena de helados ¿Cuántos helado tendrá Mario?</p>
+        <a href="#tpreg10" class="ui-shadow ui-btn ui-corner-all">15</a>
+         <a href="#tpreg10" class="ui-shadow ui-btn ui-corner-all">10</a>
+          <a href="#tpreg10" class="ui-shadow ui-btn ui-corner-all">17</a>
+           <a href="#tpreg10" class="ui-shadow ui-btn ui-corner-all">13</a>
+    </div>	
+</div>
+
+<!-- Pregunta10 teens -->
+<div data-role="page" id="tpreg10" data-theme="a">
+    <div role="main" class="ui-content" >
+        <div class="logo"> </div>
+        <br>
+        <br>
+          <p><img src="img/Macchupicchu.png"></p>
+        <p>En Perú, tenemos una de las 7 maravillas del nuevo mundo ¿Sabemos cómo se llama?</p>
+         <a href="#final1" class="ui-shadow ui-btn ui-corner-all">Machu Picchu</a>
+         <a href="#final1" class="ui-shadow ui-btn ui-corner-all">Pajaten</a>
+          <a href="#final1" class="ui-shadow ui-btn ui-corner-all">Cerro maya</a>
+           <a href="#final1" class="ui-shadow ui-btn ui-corner-all">Ruinas Wari</a>
+    </div>	
+</div>
+
+<div data-role="page" id="puntaje" data-theme="a">
+    <div role="main" class="ui-content" >
+        <div class="logo"> </div>
+        <br>
+        <br>
+        <h1>Tienes 10 puntos</h1>
+    </div>	
+</div>
+
+
+<div data-role="page" id="final1" data-theme="a">
+    <div role="main" class="ui-content" >
+        <div class="logo"> </div>
+        <br>
+        <br>
+        <h1>¡Regístrate para seguir ganando
+puntos y participar por uno de los
+PlayStation 4!</h1>
+<p>regístrate con tu correo:</p><br>
+
+
+<input name="correo" id="correo" value="" placeholder="Correo..." ><br>
+
+           <a href="#registro" class="ui-shadow ui-btn ui-corner-all">Comenzar</a>  
+        </div>	
+</div>
+
+
+<div data-role="page" id="registro" data-theme="a">
+    <div role="main" class="ui-content" >
+        <div class="logo"> </div>
+        <br>
+        <br>
+        <h1>Registrate en desafio Alpha</h1>
+        <label for="tel">Nombres:</label>
+		<input name="nombres" id="nombres" value="" type="text"><br>
+<label for="tel">Apellidos:</label>
+		<input name="apellidos" id="apellidos" value="" type="text"><br>
+<label for="tel">Correo:</label>
+		<input name="correo" id="correo" value="" type="text"><br>
+
+        <a href="#otrodesafio" class="ui-shadow ui-btn ui-corner-all">Registrarse</a>  
+    </div>	
+</div>
+
+
+<div data-role="page" id="otrodesafio" data-theme="a">
+    <div role="main" class="ui-content" >
+        <div class="logo"> </div>
+        <br>
+        <br>
+        <h1>Ya tienes 10 puntos</h1>
+        <p>¿Listo para más?
+¡Elige otro desafío
+y ganas más puntos!</p>
+        <a href="#scool2" class="ui-shadow ui-btn ui-corner-all">Elije otro desafio</a>  
+    </div>	
+</div>
 </body>
+<script>
+ $(document).ready(function(e) {
+    $("#test").click(function(){
+		var year = $("#select-native-3").val();
+		 if(year<2004){
+			 $.mobile.navigate( "#teens1" );
+			 }
+		 if(year>2004){
+			  $.mobile.navigate( "#scool1" );
+			 }
+		});
+});
+</script>
 </html>

@@ -1,0 +1,17 @@
+/* CSS Document */
+.ui-page { 
+background:url(../img/app_v2.jpg) no-repeat 0px 0px;
+background-size:cover;
+}
+h1{
+	text-align:center;
+	}
+.logo{
+	position: relative;
+	width: 200px;
+	height: 168px;
+	background: url(../img/logo.png) no-repeat 0px 0px;
+	background-size: cover;
+	top: 51px;
+	left: 160px;
+	}
